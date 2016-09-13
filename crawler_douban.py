@@ -6,7 +6,6 @@ import time
 import random
 import datetime
 
-#edit on Sep 23,2016
 def getContent(url):
     try:
         html = urlopen(url)
@@ -15,8 +14,6 @@ def getContent(url):
     try:
         bsObj = BeautifulSoup(html,"html.parser")
         title = bsObj.body.h1
-        #print bsObj.prettify()
-        keywords = bsObj.find("meta",{"name":"keywords"})
     except AttributeError as e:
         return None
 
@@ -98,6 +95,8 @@ url = "https://movie.douban.com/subject/22939161"
 for i in range(100):
     html = urlopen(url)
     content = getContent(url)
-    time.sleep(2)
+    random.seed(datetime.datetime.now())
+    time.sleep(random.randint(1,5))
     print '|~|'.join(content)
     url=content[-1]
+
