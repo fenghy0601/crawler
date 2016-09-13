@@ -7,6 +7,7 @@ import random
 import datetime
 
 def getContent(url):
+
     try:
         html = urlopen(url)
     except HTTPError as e:
@@ -85,18 +86,23 @@ def getContent(url):
     relatedlists=[]
     for list in lists:
         relatedlists.append(list["href"].replace("/?from=subject-page",""))
-    random.seed(datetime.datetime.now())
-    index = random.randint(0,len(relatedlists)-1)
-    nexturl = relatedlists[index]
-    content.append(nexturl)
+
+    content.append(relatedlists)
     return content
 
+
 url = "https://movie.douban.com/subject/22939161"
-for i in range(100):
-    html = urlopen(url)
-    content = getContent(url)
+random.seed(datetime.datetime.now())
+for i in range(200):
+    while True:
+        content = getContent(url)
+        relatedlists = content[-1]
+        if(content and relatedlists):
+            break
     random.seed(datetime.datetime.now())
+    index = random.randint(0, len(relatedlists) - 1)
+    url = relatedlists[index]
+
     time.sleep(random.randint(1,5))
-    print '|~|'.join(content)
-    url=content[-1]
+    print '|~|'.join(content[0:-2])
 
