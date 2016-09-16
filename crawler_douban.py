@@ -5,7 +5,9 @@ from urllib2 import HTTPError
 import time
 import random
 import datetime
+import pymysql
 
+#get the content from douban movie
 def getContent(url):
 
     try:
@@ -91,18 +93,58 @@ def getContent(url):
     return content
 
 
+def insertdata(content):
+    id = content[0]
+    name = content[1]
+    keyword = content[2]
+    ratingnum = content[3]
+    director = content[4]
+    actor = content[5]
+    movietype = content[6]
+    moviedate = content[7]
+    runtime = content[8]
+    summary = content[9]
+
+    config={'host':'127.0.0.1',
+            'port':3306,
+            'user':'root',
+            'password':'root',
+            'db':'crawler',
+            'charset':'utf8mb4'
+            }
+    conn = pymysql.connect(**config)
+    try:
+        with conn.cursor() as cursor:
+            sql="insert into movieInfo (id, name, keywords, ratingnum, director, actor, movietype, moviedate, runtime, summary) \
+  values(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            #cursor.execute(sql,(12,'1','q',3.2,'q','a','a','a',123,'a'))
+            cursor.execute(sql,(id, name.encode('utf-8'), keyword, ratingnum, director, actor, movietype, moviedate, runtime, summary))
+        conn.commit()
+    finally:
+        conn.close()
+    print '|~|'.join(content[0:-2])
+
+
 url = "https://movie.douban.com/subject/22939161"
 random.seed(datetime.datetime.now())
-for i in range(200):
+chooselist=[]
+crawlerlist=[]
+for i in range(1000):
+    crawlerlist.append(url)
     while True:
         content = getContent(url)
         relatedlists = content[-1]
-        if(content and relatedlists):
+        for list in relatedlists:
+            if list not in chooselist and list not in crawlerlist:
+                chooselist.append(list)
+        if(content and chooselist):
             break
     random.seed(datetime.datetime.now())
-    index = random.randint(0, len(relatedlists) - 1)
-    url = relatedlists[index]
+    index = random.randint(0, len(chooselist) - 1)
+    url = chooselist[index]
+    chooselist.remove(url)
 
     time.sleep(random.randint(1,5))
-    print '|~|'.join(content[0:-2])
+    insertdata(content)
+
 
