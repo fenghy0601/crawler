@@ -133,16 +133,20 @@ for i in range(1000):
     crawlerlist.append(url)
     while True:
         content = getContent(url)
-        relatedlists = content[-1]
-        for list in relatedlists:
-            if list not in chooselist and list not in crawlerlist:
-                chooselist.append(list)
-        if(content and chooselist):
-            break
+        if(content):
+            relatedlists = content[-1]
+            for list in relatedlists:
+                if list not in chooselist and list not in crawlerlist:
+                    chooselist.append(list)
+            if(relatedlists):
+                break
+            
     random.seed(datetime.datetime.now())
     index = random.randint(0, len(chooselist) - 1)
     url = chooselist[index]
     chooselist.remove(url)
+    print url
+    print 'num of choose:',len(chooselist),'  has been crawed',len(crawlerlist)    
 
     time.sleep(random.randint(1,5))
     insertdata(content)
