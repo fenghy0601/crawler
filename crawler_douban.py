@@ -83,8 +83,11 @@ def getContent(url):
     content.append(runtime)
     content.append(movie_summary)
 
-
-    lists = bsObj.find(attrs={"class":"recommendations-bd"}).find_all("a")
+    
+    if(bsObj.find(attrs={"class":"recommendations-bd"})):
+        lists = bsObj.find(attrs={"class":"recommendations-bd"}).find_all("a")
+    else:
+        lists = []
     relatedlists=[]
     for list in lists:
         relatedlists.append(list["href"].replace("/?from=subject-page",""))
@@ -125,21 +128,29 @@ def insertdata(content):
     print '|~|'.join(content[0:-2])
 
 
-url = "https://movie.douban.com/subject/22939161"
+url = "https://movie.douban.com/subject/26775637"
 random.seed(datetime.datetime.now())
 chooselist=[]
 crawlerlist=[]
-for i in range(1000):
+for i in range(5000):
     crawlerlist.append(url)
     while True:
         content = getContent(url)
         if(content):
+            print 'page:',url
             relatedlists = content[-1]
             for list in relatedlists:
                 if list not in chooselist and list not in crawlerlist:
                     chooselist.append(list)
             if(relatedlists):
                 break
+        else:
+            print 'page:', url, 'is not existed' 
+            random.seed(datetime.datetime.now())
+            index = random.randint(0, len(chooselist) - 1)
+            url = chooselist[index]
+            chooselist.remove(url)
+           
             
     random.seed(datetime.datetime.now())
     index = random.randint(0, len(chooselist) - 1)
@@ -148,7 +159,6 @@ for i in range(1000):
     print url
     print 'num of choose:',len(chooselist),'  has been crawed',len(crawlerlist)    
 
-    time.sleep(random.randint(1,5))
+    time.sleep(random.randint(3,10))
     insertdata(content)
-
 
