@@ -12,6 +12,7 @@ def getContent(url):
 
     try:
         html = urlopen(url)
+        print 'CODE:',html.getcode()
     except HTTPError as e:
         return None
     try:
@@ -22,7 +23,7 @@ def getContent(url):
 
     ID = url.split('/')[-1]
 
-    if (title.get_text().replace('\n','')):
+    if (title):
         moviename = title.get_text().replace('\n','')
     else:
         moviename = ''
@@ -95,7 +96,7 @@ def getContent(url):
     content.append(relatedlists)
     return content
 
-
+#向数据库中插入数据
 def insertdata(content):
     id = content[0]
     name = content[1]
@@ -128,7 +129,7 @@ def insertdata(content):
     print '|~|'.join(content[0:-2])
 
 
-url = "https://movie.douban.com/subject/26775637"
+url = "https://movie.douban.com/subject/26630781"
 random.seed(datetime.datetime.now())
 chooselist=[]
 crawlerlist=[]
@@ -140,7 +141,7 @@ for i in range(5000):
             print 'page:',url
             relatedlists = content[-1]
             for list in relatedlists:
-                if list not in chooselist and list not in crawlerlist:
+                if list not in chooselist and list not in crawlerlist and len(chooselist) < 100:
                     chooselist.append(list)
             if(relatedlists):
                 break
