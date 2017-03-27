@@ -12,10 +12,10 @@ import pymysql
 # 获取网页信息
 class Crawler:
     def __init__(self, url):
-        self.ds_obj = self.getContent(url)
+        self.bs_obj = self.__getContent(url)
 
     @staticmethod
-    def getContent(url):
+    def __getContent(url):
         try:
             html = urlopen(url)
             # print 'CODE:',html.getcode()
@@ -29,27 +29,65 @@ class Crawler:
         else:
             return bs_obj
 
-    # 从h1中解析
-    def getTitle(self):
-        title = self.ds_obj.body.h1
-        return title
-
+    # 从title中解析电影名
     def getMovieName(self):
-        title = self.getTitle()
+        title = self.bs_obj.body.h1
         if (title):
             moviename = title.get_text().replace('\n', '')
         else:
             moviename = ''
         return moviename
 
+    # 解析关键字
+    def getKeyword(self):
+        keyword_module = self.bs_obj.find_all(attrs={"name": "keywords"})
+        if keyword_module:
+            keyword = keyword_module[0]["content"]
+        else:
+            keyword = ''
+        return keyword
 
+    # 读取豆瓣评分
+    def getRatingNum(self):
+        ratingnum_module = self.bs_obj.find_all(attrs={"class": "ll rating_num", "property": "v:average"})
+        if ratingnum_module:
+            rating_num = ratingnum_module[0].get_text()
+        else:
+            rating_num = ''
+        return rating_num
 
+    # 读取导演信息
+    def getDirector(self):
+        director_module = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})
+        if director_module:
+            director = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})[0].get_text()
+        else:
+            director = ''
+        return director
 
+    # 读取导演ID
 
+    # 读取演员信息
+    def getActor(self):
+        actor_module = self.bs_obj.find_all(attrs={"class": "actor"})
+        if actor_module:
+            for actor in actor_module[0].find_all(attrs={"rel": "v:starring"}):
+                print actor.get("href")
+            actor = self.bs_obj.find_all(attrs={"class": "actor"})[0].get_text()
+            # actor = self.bs_obj.find_all(attrs={"class": "actor"})[0].get_text().replace(' ', '').replace('/', ',').split(':')[1]
+        else:
+            actor = ''
+        return actor
+
+    # 读取演员ID
 
 if __name__ == '__main__':
     url = "https://movie.douban.com/subject/26630781"
     crawler = Crawler(url)
-    title = crawler.getTitle()
-    print title.find_all('span', attrs="year")
-    print crawler.getMovieName()
+    print crawler
+    print "MovieName:", crawler.getMovieName()
+    print "Keyword:", crawler.getKeyword()
+    print "RatingNum:", crawler.getRatingNum()
+    print "Director:", crawler.getDirector()
+    print "Actors:", crawler.getActor()
+
