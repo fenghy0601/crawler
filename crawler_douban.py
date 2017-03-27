@@ -9,7 +9,6 @@ import pymysql
 
 #get the content from douban movie
 def getContent(url):
-
     try:
         html = urlopen(url)
         print 'CODE:',html.getcode()
