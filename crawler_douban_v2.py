@@ -7,6 +7,7 @@ import time
 import random
 import datetime
 import pymysql
+import re
 
 
 # 获取网页信息
@@ -60,26 +61,44 @@ class Crawler:
     def getDirector(self):
         director_module = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})
         if director_module:
-            director = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})[0].get_text()
+            director = director_module[0].get_text()
         else:
             director = ''
         return director
 
     # 读取导演ID
+    def getDirectorId(self):
+        director_module = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})
+        reobj = re.compile("[0-9]+")
+        director_id = 0
+        if director_module:
+            m = re.search(reobj, director_module[0].get("href"))
+            if m is not None:
+                director_id = m.group(0)
+        return director_id
 
     # 读取演员信息
     def getActor(self):
         actor_module = self.bs_obj.find_all(attrs={"class": "actor"})
         if actor_module:
-            for actor in actor_module[0].find_all(attrs={"rel": "v:starring"}):
-                print actor.get("href")
-            actor = self.bs_obj.find_all(attrs={"class": "actor"})[0].get_text()
-            # actor = self.bs_obj.find_all(attrs={"class": "actor"})[0].get_text().replace(' ', '').replace('/', ',').split(':')[1]
+            actor = actor_module[0].get_text().replace(' ', '').replace('/', ',').split(':')[1]
         else:
             actor = ''
         return actor
 
     # 读取演员ID
+    def getActorId(self):
+        actor_id = []
+        re_obj = re.compile("[0-9]+")
+        actor_module = self.bs_obj.find_all(attrs={"class": "actor"})
+        if actor_module:
+            for actor in actor_module[0].find_all(attrs={"rel": "v:starring"}):
+                m = re.search(re_obj, actor.get("href"))
+                if m is not None:
+                    actor_id.append(int(m.group(0)))
+        return str(actor_id)
+
+
 
 if __name__ == '__main__':
     url = "https://movie.douban.com/subject/26630781"
@@ -89,5 +108,7 @@ if __name__ == '__main__':
     print "Keyword:", crawler.getKeyword()
     print "RatingNum:", crawler.getRatingNum()
     print "Director:", crawler.getDirector()
+    print "DirectorID:", crawler.getDirectorId()
     print "Actors:", crawler.getActor()
+    print "ActorIDs:", crawler.getActorId()
 
