@@ -8,7 +8,9 @@ import random
 import datetime
 import pymysql
 import re
-
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # 获取网页信息
 class Crawler:
@@ -98,7 +100,39 @@ class Crawler:
                     actor_id.append(int(m.group(0)))
         return str(actor_id)
 
+    # 读取电影类型
+    def getMovieType(self):
+        types_module = self.bs_obj.find_all(attrs={"property":"v:genre"})
+        movie_type = []
+        for type in types_module:
+            movie_type.append(type.get_text())
+        return ','.join(movie_type)
 
+    # 读取电影时长
+    def getRunTime(self):
+        runtime_module = self.bs_obj.find_all('span',attrs={"property":"v:runtime"})
+        runtime = -1
+        if runtime_module:
+            runtime = int(runtime_module[0]["content"])
+        return runtime
+
+    # 读取电影概述
+    def getSummary(self):
+        summary_module = self.bs_obj.find_all('span',attrs={"property":"v:summary"})
+        movie_summary = ''
+        if summary_module:
+            movie_summary = summary_module[0].get_text()
+            movie_summary = str(movie_summary).replace(' ', '').replace('\n', '').replace('\t', '')
+        return movie_summary
+
+    # 获取推荐列表
+    def getRecomment(self):
+        Recomment_lists = self.bs_obj.find(attrs={"class": "recommendations-bd"}).find_all("a")
+        relatedlists = []
+        for list in Recomment_lists:
+            url = list["href"].replace("/?from=subject-page", "")
+            relatedlists.append(url)
+        return relatedlists
 
 if __name__ == '__main__':
     url = "https://movie.douban.com/subject/26630781"
@@ -111,4 +145,7 @@ if __name__ == '__main__':
     print "DirectorID:", crawler.getDirectorId()
     print "Actors:", crawler.getActor()
     print "ActorIDs:", crawler.getActorId()
-
+    print "Movietype:", crawler.getMovieType()
+    print "Runtime:", crawler.getRunTime()
+    print "Summary:", crawler.getSummary()
+    print "RecommentLists:", crawler.getRecomment()
