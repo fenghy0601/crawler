@@ -7,7 +7,10 @@ import time
 import random
 import datetime
 import pymysql
-
+import re
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # 获取网页信息
 class Crawler:
@@ -60,26 +63,76 @@ class Crawler:
     def getDirector(self):
         director_module = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})
         if director_module:
-            director = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})[0].get_text()
+            director = director_module[0].get_text()
         else:
             director = ''
         return director
 
     # 读取导演ID
+    def getDirectorId(self):
+        director_module = self.bs_obj.find_all(attrs={"rel": "v:directedBy"})
+        reobj = re.compile("[0-9]+")
+        director_id = 0
+        if director_module:
+            m = re.search(reobj, director_module[0].get("href"))
+            if m is not None:
+                director_id = m.group(0)
+        return director_id
 
     # 读取演员信息
     def getActor(self):
         actor_module = self.bs_obj.find_all(attrs={"class": "actor"})
         if actor_module:
-            for actor in actor_module[0].find_all(attrs={"rel": "v:starring"}):
-                print actor.get("href")
-            actor = self.bs_obj.find_all(attrs={"class": "actor"})[0].get_text()
-            # actor = self.bs_obj.find_all(attrs={"class": "actor"})[0].get_text().replace(' ', '').replace('/', ',').split(':')[1]
+            actor = actor_module[0].get_text().replace(' ', '').replace('/', ',').split(':')[1]
         else:
             actor = ''
         return actor
 
     # 读取演员ID
+    def getActorId(self):
+        actor_id = []
+        re_obj = re.compile("[0-9]+")
+        actor_module = self.bs_obj.find_all(attrs={"class": "actor"})
+        if actor_module:
+            for actor in actor_module[0].find_all(attrs={"rel": "v:starring"}):
+                m = re.search(re_obj, actor.get("href"))
+                if m is not None:
+                    actor_id.append(int(m.group(0)))
+        return str(actor_id)
+
+    # 读取电影类型
+    def getMovieType(self):
+        types_module = self.bs_obj.find_all(attrs={"property":"v:genre"})
+        movie_type = []
+        for type in types_module:
+            movie_type.append(type.get_text())
+        return ','.join(movie_type)
+
+    # 读取电影时长
+    def getRunTime(self):
+        runtime_module = self.bs_obj.find_all('span',attrs={"property":"v:runtime"})
+        runtime = -1
+        if runtime_module:
+            runtime = int(runtime_module[0]["content"])
+        return runtime
+
+    # 读取电影概述
+    def getSummary(self):
+        summary_module = self.bs_obj.find_all('span',attrs={"property":"v:summary"})
+        movie_summary = ''
+        if summary_module:
+            movie_summary = summary_module[0].get_text()
+            movie_summary = str(movie_summary).replace(' ', '').replace('\n', '').replace('\t', '')
+        return movie_summary
+
+    # 获取推荐列表
+    def getRecomment(self):
+        Recomment_lists = self.bs_obj.find(attrs={"class": "recommendations-bd"}).find_all("a")
+        relatedlists = []
+        for list in Recomment_lists:
+            url = list["href"].replace("/?from=subject-page", "")
+            relatedlists.append(url)
+        return relatedlists
 
 if __name__ == '__main__':
     url = "https://movie.douban.com/subject/26630781"
@@ -89,5 +142,10 @@ if __name__ == '__main__':
     print "Keyword:", crawler.getKeyword()
     print "RatingNum:", crawler.getRatingNum()
     print "Director:", crawler.getDirector()
+    print "DirectorID:", crawler.getDirectorId()
     print "Actors:", crawler.getActor()
-
+    print "ActorIDs:", crawler.getActorId()
+    print "Movietype:", crawler.getMovieType()
+    print "Runtime:", crawler.getRunTime()
+    print "Summary:", crawler.getSummary()
+    print "RecommentLists:", crawler.getRecomment()
