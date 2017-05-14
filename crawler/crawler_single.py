@@ -56,11 +56,12 @@ class Crawler_single:
 
     # 读取豆瓣评分
     def getRatingNum(self):
+        rating_num = -1
         ratingnum_module = self.bs_obj.find_all(attrs={"class": "ll rating_num", "property": "v:average"})
         if ratingnum_module:
             rating_num = ratingnum_module[0].get_text()
-        else:
-            rating_num = -1
+            if re.match(re.compile('[0-9.]+'), rating_num) is None:
+                rating_num = -1
         return rating_num
 
     # 读取导演信息
@@ -139,11 +140,13 @@ class Crawler_single:
 
     # 获取推荐列表
     def getRecomment(self):
-        Recomment_lists = self.bs_obj.find(attrs={"class": "recommendations-bd"}).find_all("a")
+        Recomment_module = self.bs_obj.find(attrs={"class": "recommendations-bd"})
         relatedlists = []
-        for list in Recomment_lists:
-            url = list["href"].replace("/?from=subject-page", "")
-            relatedlists.append(url)
+        if Recomment_module:
+            Recomment_lists = Recomment_module.find_all("a")
+            for list in Recomment_lists:
+                url = list["href"].replace("/?from=subject-page", "")
+                relatedlists.append(url)
         return relatedlists
 
     def is_empty(self):
@@ -153,7 +156,7 @@ class Crawler_single:
             return False
 
 if __name__ == '__main__':
-    url = "https://movie.douban.com/subject/25864124"
+    url = "https://movie.douban.com/subject/26818364"
     crawler = Crawler_single(url)
     #print crawler
     print "MovieName:", crawler.getMovieName()

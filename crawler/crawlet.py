@@ -8,7 +8,6 @@ import datetime
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-# 爬虫的调度，多线程实现
 class CrawlerMain:
     def __init__(self):
         self.choose_list = set()
@@ -31,7 +30,7 @@ class CrawlerMain:
             if db.has_id(choose_url.split('/')[-1]) is None:
                 time.sleep(random.randint(2, 5))
                 movie_obj = Crawler_single(choose_url)
-                if movie_obj is not None or ~movie_obj.is_empty():
+                if not movie_obj.is_empty():
                     related_lists = movie_obj.getRecomment()
                     movie_id = movie_obj.getMovieId()
                     movie_name = movie_obj.getMovieName()
@@ -55,5 +54,6 @@ class CrawlerMain:
                 self.choose_list.add(movie)
 
 if __name__ == '__main__':
-    initial_url = "https://movie.douban.com/subject/19899718"
+#    initial_url = "https://movie.douban.com/subject/26593587"
+    initial_url = "https://movie.douban.com/subject/26808466"
     CrawlerMain().begin_crawler(initial_url)
