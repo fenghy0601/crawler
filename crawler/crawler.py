@@ -14,9 +14,20 @@ class CrawlerMain:
         self.choose_list = set()
         self.crawler_list = set()
 
-    def begin_crawler(self, url):
-        self.choose_list.add(url)
+    def begin_crawler(self, urls):
+        for url in urls:
+            self.choose_list.add(url)
         self.main_crawler()
+
+    def add_crawler(self, min , max, step):
+        i = min
+        while i < max:
+            choose_urls = []
+            for j in range(1, 10):
+                choose_urls.append("https://movie.douban.com/subject/" + str(i))
+                i += random.randint(1, step)
+            self.begin_crawler(choose_urls)
+            print "======>" + str(i)
 
     def main_crawler(self):
         total = 0
@@ -32,7 +43,7 @@ class CrawlerMain:
                 db = dbManagement()
                 related_lists = []
                 if db.has_id(choose_url.split('/')[-1]) is None:
-                    time.sleep(random.randint(2, 5))
+                    time.sleep(random.randint(1, 4))
                     movie_obj = Crawler_single(choose_url)
                     if not movie_obj.is_empty():
                         related_lists = movie_obj.getRecomment()
@@ -57,10 +68,15 @@ class CrawlerMain:
 
     def update_chooselist(self, related_list):
         for movie in related_list:
-            if len(self.choose_list) < 100 and movie not in self.crawler_list:
+            #if len(self.choose_list) < 1000 and movie not in self.crawler_list:
+            if movie not in self.crawler_list:
                 self.choose_list.add(movie)
 
 if __name__ == '__main__':
-#    initial_url = "https://movie.douban.com/subject/26593587"
-    initial_url = "https://movie.douban.com/subject/2209573"
-    CrawlerMain().begin_crawler(initial_url)
+    #initial_url = "https://movie.douban.com/subject/26593587"
+    #initial_urls = ["https://movie.douban.com/subject/26382767", "https://movie.douban.com/subject/26602933", "https://movie.douban.com/subject/6888739"]
+    #CrawlerMain().begin_crawler(initial_urls)
+    CrawlerMain().add_crawler(22000000,  26000000, 100)
+
+# 26611625 2895922
+
