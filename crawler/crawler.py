@@ -1,6 +1,7 @@
 #coding:utf-8
 from crawler_single import Crawler_single
 from db_management import dbManagement
+from crawler_display import CrawlerDisplay
 import time
 import random
 import sys
@@ -14,11 +15,13 @@ class CrawlerMain:
         self.choose_list = set()
         self.crawler_list = set()
 
+    # 给定电影名单
     def begin_crawler(self, urls):
         for url in urls:
             self.choose_list.add(url)
         self.main_crawler()
 
+    # 给定ID范围
     def add_crawler(self, min , max, step):
         i = min
         while i < max:
@@ -73,10 +76,8 @@ class CrawlerMain:
                 self.choose_list.add(movie)
 
 if __name__ == '__main__':
-    #initial_url = "https://movie.douban.com/subject/26593587"
-    #initial_urls = ["https://movie.douban.com/subject/26382767", "https://movie.douban.com/subject/26602933", "https://movie.douban.com/subject/6888739"]
-    #CrawlerMain().begin_crawler(initial_urls)
-    CrawlerMain().add_crawler(22000000,  26000000, 100)
-
-# 26611625 2895922
-
+    # initial_urls = ["https://movie.douban.com/subject/26382767", "https://movie.douban.com/subject/26602933", "https://movie.douban.com/subject/6888739"]
+    # CrawlerMain().begin_crawler(initial_urls)
+    # CrawlerMain().add_crawler(22000000,  26000000, 100)
+    movie_lists = CrawlerDisplay().get_display_list()
+    CrawlerMain().begin_crawler(movie_lists)
