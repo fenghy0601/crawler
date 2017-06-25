@@ -1,0 +1,573 @@
+[INFO  - 2017-05-30T03:40:16.153Z] GhostDriver - Main - running on port 13496
+[INFO  - 2017-05-30T03:40:19.111Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-30T03:40:19.111Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.customHeaders:  - {}
+[INFO  - 2017-05-30T03:40:19.111Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-30T03:40:19.111Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b3b323e0-44e9-11e7-9a98-5911f9213e1b
+[INFO  - 2017-05-30T03:45:16.150Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T03:50:16.162Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T03:55:16.162Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:00:16.163Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:05:16.163Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:10:16.170Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-05-30T04:14:50.194Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'json[i].split(",")')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T04:14:50.194Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:1066)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T04:15:00.161Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'json[i].split(",")')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T04:15:00.161Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:1066)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-05-30T04:15:16.170Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:20:16.177Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:25:16.177Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:30:16.180Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:35:16.179Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:40:16.193Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:45:16.193Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:50:16.200Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T04:55:16.211Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:00:16.211Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:05:16.211Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:10:16.212Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:15:16.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:20:16.224Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:25:16.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:30:16.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-05-30T05:34:57.146Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:34:57.147Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:09.139Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:09.140Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-05-30T05:35:16.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-05-30T05:35:21.142Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:21.143Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:34.183Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:34.183Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:45.161Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:45.162Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:57.162Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:35:57.163Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:09.727Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:09.728Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:21.159Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:21.159Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:33.183Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:33.183Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:45.158Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:45.159Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:57.176Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:36:57.177Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:10.331Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:10.332Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:21.168Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:21.168Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:33.182Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:33.183Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:45.708Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:45.709Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:57.207Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:37:57.208Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:09.178Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:09.179Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:21.188Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:21.188Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:33.187Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:33.187Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:46.325Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:46.325Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:57.193Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:38:57.194Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:09.242Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:09.242Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:21.794Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:21.794Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:33.207Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:33.207Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:45.195Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T05:39:45.196Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-05-30T05:40:16.229Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:45:16.229Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:50:16.232Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T05:55:16.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:00:16.244Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:05:16.255Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:10:16.264Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:15:16.264Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:20:16.272Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:25:16.272Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:30:16.272Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-05-30T06:31:11.372Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:11.372Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:21.840Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:21.841Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:33.845Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:33.845Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:46.191Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: null is not an object (evaluating '_hq_cr_time.length')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:31:46.191Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  hqcr (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:607)
+  success (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:515)
+  l (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  fireWith (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  T (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+  onreadystatechange (http://hqres.eastmoney.com/EM15AGIndex/js/jquery-1.8.3.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:32:47.047Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'vsa.replace')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:32:47.048Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  udcls (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:32)
+  (anonymous function) (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:563)
+  onload (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:207)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:32:57.927Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'vsa.replace')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:32:57.927Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  udcls (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:32)
+  (anonymous function) (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:563)
+  onload (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:207)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:09.917Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'vsa.replace')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:09.917Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  udcls (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:32)
+  (anonymous function) (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:563)
+  onload (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:207)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:22.849Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'vsa.replace')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:22.849Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  udcls (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:32)
+  (anonymous function) (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:563)
+  onload (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:207)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:33.951Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'vsa.replace')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:33.951Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  udcls (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:32)
+  (anonymous function) (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:563)
+  onload (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:207)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:45.915Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - msg: TypeError: undefined is not an object (evaluating 'vsa.replace')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-30T06:33:45.916Z] Session [b3b323e0-44e9-11e7-9a98-5911f9213e1b] - page.onError - stack:
+  udcls (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:32)
+  (anonymous function) (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:563)
+  onload (http://hqres.eastmoney.com/EM15AGIndex/js/quote-min.js:207)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-05-30T06:35:16.273Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:40:16.288Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:45:16.288Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:50:16.291Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T06:55:16.302Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:00:16.303Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:05:16.304Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:10:16.310Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:15:16.321Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:20:16.321Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:25:16.321Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:30:16.322Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:35:16.322Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:40:16.322Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:45:16.323Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:50:16.323Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T07:55:16.334Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:00:16.335Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:05:16.335Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:10:16.334Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:15:16.335Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:20:16.336Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:25:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:30:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:35:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:40:16.337Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:45:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:50:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T08:55:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:00:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:05:16.338Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:10:16.339Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:15:16.340Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:20:16.340Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:25:16.340Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:30:16.340Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:35:16.351Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:40:16.351Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:45:16.352Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:50:16.352Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T09:55:16.363Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:00:16.368Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:05:16.368Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:10:16.382Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:15:16.382Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:20:16.384Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:25:16.384Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:30:16.384Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:35:16.387Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:40:16.387Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:45:16.400Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:50:16.400Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T10:55:16.400Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:00:16.414Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:05:16.413Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:10:16.418Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:15:16.428Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:20:16.428Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:25:16.429Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:30:16.429Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:35:16.429Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:40:16.442Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:45:16.449Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:50:16.449Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T11:55:16.461Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:00:16.461Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:05:16.461Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:10:16.460Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:15:16.475Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:20:16.475Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:25:16.475Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:30:16.475Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:35:16.475Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:40:16.476Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:45:16.476Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:50:16.477Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T12:55:16.476Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:00:16.490Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:05:16.490Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:10:16.491Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:15:16.491Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:20:16.491Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:25:16.493Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:30:16.492Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:35:16.493Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:40:16.493Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:45:16.504Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:50:16.506Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T13:55:16.508Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:00:16.512Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:05:16.511Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:10:16.512Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:15:16.521Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:20:16.524Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:25:16.524Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:30:16.524Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:35:16.526Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:40:16.525Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:45:16.538Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:50:16.538Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T14:55:16.538Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:00:16.551Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:05:16.553Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:10:16.553Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:15:16.553Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:20:16.558Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:25:16.558Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:30:16.557Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:35:16.567Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-30T15:40:16.567Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
