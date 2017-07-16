@@ -34,7 +34,7 @@ class Crawler_fund:
         #Csv_output()
         for i in range(int(page)):
             print "PAGE: %s" % (i + 1)
-            url = 'http://fundapi.eastmoney.com/fundtradenew.aspx?ft=%s&sc=1n&st=desc&pi=%s&pn=100&cp=&ct=&cd=&ms=&fr=&plevel=&fst=&ftype=&fr1=&fl=0&isab=' % (self.type, page)
+            url = 'http://fundapi.eastmoney.com/fundtradenew.aspx?ft=%s&sc=1n&st=desc&pi=%s&pn=100&cp=&ct=&cd=&ms=&fr=&plevel=&fst=&ftype=&fr1=&fl=0&isab=' % (self.type, i)
             fund_page = Crawler_json(url, self.type)
             fund_page.data_format()
 
@@ -44,9 +44,11 @@ class Crawler_json:
         self.type = type
 
     def decode_json(self):
-        # 将解码的格式预处理成Python可识别的json格式
+        # 将解码的格式预处理成Python可识别的json格式i
         pre_string = self.html.split('=')[-1].rstrip(';')
         m = re.findall('(\{|\,)(\w+):', pre_string)
+        data_name = 'datas'
+        formatted_str = ''
         for substring in m:
             # 匹配变量命名规则
             if 'data' in substring[1]:
@@ -84,7 +86,7 @@ class Csv_output:
 if __name__ == '__main__':
     Crawler_fund('http://fund.eastmoney.com/trade/pg.html').main()
     Crawler_fund('http://fund.eastmoney.com/trade/gp.html').main()
-    Crawler_fund('http://fund.eastmoney.com/trade/hh.html').main()
+    #Crawler_fund('http://fund.eastmoney.com/trade/hh.html').main()
     Crawler_fund('http://fund.eastmoney.com/trade/zq.html').main()
     Crawler_fund('http://fund.eastmoney.com/trade/zs.html').main()
     Crawler_fund('http://fund.eastmoney.com/trade/qdii.html').main()
