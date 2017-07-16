@@ -61,6 +61,13 @@ class Crawler_json:
             data = data.split('|')
             fund_attr = []
             for i in range(0, 2) + range(3 ,15) + [18, 24]:
+                if data[i] == '':
+                    # 日期格式空值处理, 将空值替换为mysql-timestamp类型最小时间
+                    if i == 3:
+                        data[i] = '1970-01-02'
+                    # 非日期格式空值处理
+                    else:
+                        data[i] = '-999'
                 fund_attr.append(data[i].encode('utf-8'))
             fund_attr.append(self.type)
             print "ID:" + fund_attr[0] + "\tNAME:"+ fund_attr[1]
@@ -70,8 +77,9 @@ class Csv_output:
     def __init__(self, row = None):
         if row is None:
             row = ["ID", "NAME", "DATE", "VALUE", "R_DAY", "R_WEEK", "R_MONTH", "R_3MONTH", "R_6MONTH", "R_YEAR", "R_2YEAR", "R_3YEAR", "SINCE_LAST_YEAR", "SINCE_SET_UP", "BUY_RATE", "LOWEST_COST"]
-        self.writer = csv.writer(open('fund_data.csv', 'a'))
-        self.writer.writerow(row)
+        with open('fund_data.csv', mode='a') as csv_file:
+            self.writer = csv.writer(csv_file)
+            self.writer.writerow(row)
 
 if __name__ == '__main__':
     Crawler_fund('http://fund.eastmoney.com/trade/pg.html').main()
@@ -80,8 +88,6 @@ if __name__ == '__main__':
     Crawler_fund('http://fund.eastmoney.com/trade/zq.html').main()
     Crawler_fund('http://fund.eastmoney.com/trade/zs.html').main()
     Crawler_fund('http://fund.eastmoney.com/trade/qdii.html').main()
-    Crawler_fund('http://fund.eastmoney.com/trade/hb.html').main()
-    Crawler_fund('http://fund.eastmoney.com/trade/lc.html').main()
-    Crawler_fund('http://fund.eastmoney.com/trade/bb.html').main()
-
-
+    #Crawler_fund('http://fund.eastmoney.com/trade/hb.html').main()
+    #Crawler_fund('http://fund.eastmoney.com/trade/lc.html').main()
+    #Crawler_fund('http://fund.eastmoney.com/trade/bb.html').main()
